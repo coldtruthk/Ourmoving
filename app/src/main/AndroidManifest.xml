@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sungshin.edusungshinourmoving">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/om_home"
+        android:label="OurMoving"
+        android:roundIcon="@mipmap/om_home"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EdusungshinOurMoving"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAG4ocgTJ89xiTc3HKzKjxPmtHoxQv90rQ" />
+
+        <activity android:name="edu.sungshin.edusungshinourmoving.MainActivity2" />``
+        <activity android:name="edu.sungshin.edusungshinourmoving.MainActivity3" />
+        <activity android:name="edu.sungshin.edusungshinourmoving.MainActivity4" />
+        <activity android:name="edu.sungshin.edusungshinourmoving.BottomTabNavigation" />
+        <activity android:name="edu.sungshin.edusungshinourmoving.chatdetail.ChatRoomActivity"/>
+        <activity android:name="edu.sungshin.edusungshinourmoving.home.AddArticleActivity"/>
+        <activity android:name="edu.sungshin.edusungshinourmoving.LoginActivity"/>
+        <activity android:name="edu.sungshin.edusungshinourmoving.RegisterActivity"/>
+
+        <activity
+            android:name="edu.sungshin.edusungshinourmoving.MainActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
